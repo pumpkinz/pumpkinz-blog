@@ -1,0 +1,166 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8"
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif
+$base-font-size:   16px
+$small-font-size:  $base-font-size * 0.875
+$base-line-height: 1.5
+
+$spacing-unit:     30px
+
+$text-color:       #111
+$background-color: #fdfdfd
+$brand-color:      #2a7ae2
+
+$grey-color:       #828282
+$grey-color-light: lighten($grey-color, 40%)
+$grey-color-dark:  darken($grey-color, 25%)
+
+// Width of the content area
+$content-width:    800px
+
+$on-palm:          600px
+$on-laptop:        800px
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2
+//         padding-left: $spacing-unit / 2
+//     }
+// }
+@mixin media-query($device)
+  @media screen and (max-width: $device)
+    @content
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base", "layout", "syntax-highlighting"
+
+
+// Custom Style
+$primary-color: #EF6C00
+
+html, body
+  font-family: 'Roboto','Helvetica',sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+nav
+  background-color: $primary-color
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
+  a.button-collapse
+    display: block
+  .nav-wrapper
+    padding: 0 40px 0 16px
+    .brand-logo
+      font-size: 20px
+      letter-spacing: 0.018666rem
+      font-weight: 500
+      transform: translateX(0)
+      left: 72px
+    .side-nav
+      .side-nav-header
+        height: 168px
+        padding: 16px 16px
+        background-color: $primary-color
+        position: relative
+        img
+          max-width: 64px
+        .side-nav-title
+          color: #fff
+          font-size: 20px
+          letter-spacing: 0.018666rem
+          font-weight: 500
+          position: absolute
+          bottom: 0
+          line-height: 56px
+          margin-bottom: 8px
+      ul
+        margin-top: 8px
+      li
+        padding: 0 16px
+      a
+        padding: 0
+        height: 56px
+        line-height: 56px
+  .button-collapse i
+    font-size: 1.6rem
+  ul
+    a
+      font-size: 0.866666rem
+      padding: 0 24px
+      line-height: 64px
+      font-weight: bolder
+    li:hover
+      background-color: transparent
+
+.parallax-container
+  height: 250px
+
+h1
+  font-size: 7.466666rem
+  font-weight: 300
+  line-height: 1
+  letter-spacing: -0.373333rem
+
+h2
+  font-size: 3.473333rem
+  font-weight: 400
+  line-height: 1.35
+  letter-spacing: -0.186666rem
+
+h3
+  font-size: 3rem
+  font-weight: 400
+  line-height: 48px
+
+h4
+  font-size: 2.266666rem
+  font-weight: 400
+  line-height: 40px
+
+h5
+  font-size: 1.6rem
+  font-weight: 400
+  line-height: 32px
+
+h6
+  font-size: 1.333333rem
+  font-weight: 500
+  line-height: 1
+  letter-spacing: 0.018666rem
+
+footer
+  background-color: #424242
+  height: 100px
+  &.row
+    margin-bottom: 0
+  .footer-logo, .footer-links
+    margin-bottom: 20px
+    @media (min-width: 992px)
+      margin-bottom: 0
+  .footer-logo
+    color: #fff
+    font-weight: 500
+  .footer-links
+    a
+      color: #fff
+      margin-right: 16px
+  .footer-social-buttons a
+    margin-right: 16px
+    @media (min-width: 992px)
+      float: right
+    i.material-icons
+      font-size: 23px
+
+.icon > svg
+  width: 20px
+  height: 20px
+  display: inline-block
+  vertical-align: middle

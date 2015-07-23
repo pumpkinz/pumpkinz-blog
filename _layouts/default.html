@@ -6,15 +6,24 @@
   <body>
 
     {% include header.html %}
+      <div class="row container">
+        <h1>Hello World</h1>
+      </div>
 
-    <div class="page-content">
-      <div class="wrapper">
+      <div class="row container">
         {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+
+    <script src="{{ "/scripts/main.js" | prepend: site.baseurl }}"></script>
   </body>
 
 </html>
