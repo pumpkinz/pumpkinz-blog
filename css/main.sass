@@ -26,7 +26,6 @@ $on-palm:          600px
 $on-laptop:        800px
 
 
-
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -101,7 +100,7 @@ nav
       background-color: transparent
 
 .parallax-container
-  height: 250px
+  height: 300px
 
 h1
   font-size: 7.466666rem
@@ -138,7 +137,7 @@ h6
 
 footer
   background-color: #424242
-  height: 100px
+  padding: 32px 16px
   &.row
     margin-bottom: 0
   .footer-logo, .footer-links
@@ -153,7 +152,9 @@ footer
       color: #fff
       margin-right: 16px
   .footer-social-buttons a
+    height: 25px
     margin-right: 16px
+    float: left
     @media (min-width: 992px)
       float: right
     i.material-icons
@@ -164,3 +165,20 @@ footer
   height: 20px
   display: inline-block
   vertical-align: middle
+
+#rss-link
+  line-height: 25px
+
+.main-card.mdl-card
+  width: auto
+  background: $primary-color
+
+.main-card
+  margin-top: -64px
+  > .mdl-card_acctions
+    border-color: rgba(255, 255, 255, 0.2)
+  > .mdl-card__title, > .mdl-card__actions > .mdl-button, .mdl-card__menu
+    color: #fff
+
+.blog-title
+  margin-bottom: 0
