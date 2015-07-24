@@ -18,3 +18,7 @@ ms_tile_image: "/images/touch/ms-touch-icon-144x144-precomposed.png"
 
 # Build settings
 markdown: kramdown
+
+# Sass settings
+sass:
+  style: :compressed
