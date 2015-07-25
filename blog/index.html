@@ -4,16 +4,27 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="row container">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+{% for post in site.posts %}
+  <div class="mdl-cell mdl-card mdl-shadow--2dp blog-card">
+    <div class="mdl-card__title" style="background: url('{{ post.image }}') center / cover"></div>
+    <div class="mdl-card__supporting-text">
+      <h2 class="mdl-card__title-text">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      {{ post.excerpt }}
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">        
+        Read More
+      </a>
+      {% assign author = site.authors[post.author] %}
+      <div class="author-avatar">
+        <a href="https://github.com/{{ author.github }}"><img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40"></a>
+      </div>
+      <div class="author-info mdl-color-text--grey-600">
+        <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a><br>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y"}}</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}

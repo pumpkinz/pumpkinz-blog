@@ -10,7 +10,7 @@ $primary-color: #EF6C00
 @import "variables", "mixins", "base", "layout", "syntax-highlighting", "materialize/materialize"
 
 // Custom import
-@import "sidenav", "footer"
+@import "sidenav", "footer", "blog", "post"
 
 html, body
   font-family: 'Roboto','Helvetica',sans-serif
@@ -35,9 +35,14 @@ footer
   @media #{$medium-and-down}
     height: auto
 
+// Overwrite
+a
+  color: inherit
+
 // Parallax
 .parallax-container
   height: 300px
+  margin-bottom: -64px
 
 // Main Card
 .main-card.mdl-card
@@ -45,7 +50,6 @@ footer
   background: $primary-color
 
 .main-card
-  margin-top: -64px
   > .mdl-card_acctions
     border-color: rgba(255, 255, 255, 0.2)
   > .mdl-card__title, > .mdl-card__actions > .mdl-button, .mdl-card__menu

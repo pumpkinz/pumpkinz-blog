@@ -6,7 +6,6 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.pumpkinz.io" # the base hostname & protocol for your site
 github_username:  pumpkinz
-image: "/images/parallax.jpg"
 
 # Theme settings
 theme_color: "#EF6C00"
@@ -23,3 +22,19 @@ markdown: kramdown
 # Sass settings
 sass:
   style: :compressed
+
+authors:
+  wiseodd:
+    display_name: Agustinus Kristiadi
+    gravatar: 13c6bb393051a1a5d0139ea159db5f91
+    email: kristiadi7@gmail.com
+    web: http://www.thirdworldnomad.com/
+    twitter: wiseodd
+    github: wiseodd
+  timotiusnc:
+    display_name: Timotius Nugroho Chandra
+    gravatar: 9f41deb8a1ac22f1116216b3bbdef1b8
+    email: timotius.nc@gmail.com
+    web: http://timotiusnc.github.io/
+    twitter: TimotiusNC
+    github: timotiusnc

@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-07-21 22:07:33
-categories: jekyll update
-author: timotiusnc
+title:  "Android Material Design"
+date:   2015-07-25 10:00:34
+categories: portfolio
+author: wiseodd
+image: /images/pumpkin_poster_alt.jpg
 ---
+Android Material Design is a design concept created by Google. It is meant to be used specifically on Android app development. You can use the material design library to help you achieve the perfect material design.
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
