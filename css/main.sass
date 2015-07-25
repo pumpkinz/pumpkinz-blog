@@ -24,6 +24,9 @@ html, body
   height: auto !important
   height: 100%
   margin: 0 auto -83px
+  .container
+    @media #{$small-and-down}
+      width: 100%
 
 .push
   height: 83px
@@ -42,18 +45,23 @@ a
 // Parallax
 .parallax-container
   height: 300px
-  margin-bottom: -64px
+  margin-bottom: -128px
 
 // Main Card
-.main-card.mdl-card
-  width: auto
-  background: $primary-color
-
 .main-card
-  > .mdl-card_acctions
-    border-color: rgba(255, 255, 255, 0.2)
-  > .mdl-card__title, > .mdl-card__actions > .mdl-button, .mdl-card__menu
+  &.mdl-card
+    width: auto
+    height: 400px
+    background: url('../images/pumpkin_poster.jpg') center / cover
+    @media #{$small-and-down}
+      width: 90%
+      margin: 0 auto 35px auto
+  > .mdl-card__actions
+    background: rgba(0, 0, 0, 0.2)
+  .main-card-image__filename
     color: #fff
+    font-size: 14px
+    font-weight: 500
 
 // Misc
 .blog-title

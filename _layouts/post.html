@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<div class="post mdl-shadow--2dp">
-
-  <div class="post-title-img" style="background: url('{{ page.image }}') center / cover"></div>
-  <div class="post-wrapper">
+<div class="mdl-card mdl-shadow--2dp post-card">
+  <div class="mdl-card__title hide-on-small-and-down" style="background: url('{{ page.image }}') center / cover"></div>
+  <div class="mdl-card__supporting-text">
     <h3 class="post-title">{{ page.title }}</h3>
     
     {% assign author = site.authors[page.author] %}
@@ -14,7 +13,7 @@ layout: default
       </div>
       <div class="author-info mdl-color-text--grey-600">
         <a href="https://github.com/{{ author.github }}">{{ author.display_name }}</a><br>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ page.date | date: "%b %-d, %Y"}}</a>
+        <a href="#!">{{ page.date | date: "%b %-d, %Y"}}</a>
       </div>
     </div>
 
@@ -22,5 +21,4 @@ layout: default
       {{ content }}
     </article>
   </div>
-
 </div>

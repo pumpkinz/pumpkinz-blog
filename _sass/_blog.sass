@@ -3,10 +3,14 @@
 
   &.mdl-card
     width: auto
+    @media #{$small-and-down}
+      width: 90%
+      margin: 0 auto 35px auto
+      box-shadow: none
 
   > .mdl-card__title
     color: #fff
-    height: 250px
+    height: 200px
   >.mdl-card__supporting-text > .mdl-card__title-text
     font-weight: 500
     margin-bottom: 15px
