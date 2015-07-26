@@ -4,7 +4,7 @@ title:  "Android Material Design"
 date:   2015-07-25 10:00:34
 categories: portfolio
 author: wiseodd
-image: /images/pumpkin_poster_alt.jpg
+image: /images/pumpkin-reader-banner.png
 ---
 Android Material Design is a design concept created by Google. It is meant to be used specifically on Android app development. You can use the material design library to help you achieve the perfect material design.
 

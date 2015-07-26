@@ -24,9 +24,6 @@ html, body
   height: auto !important
   height: 100%
   margin: 0 auto -83px
-  .container
-    @media #{$small-and-down}
-      width: 100%
 
 .push
   height: 83px
@@ -38,30 +35,23 @@ footer
   @media #{$medium-and-down}
     height: auto
 
+// Banner
+.banner-img
+  margin-top: -192px
+.banner-title
+  margin-top: 80px
+  color: #fff
+
 // Overwrite
 a
   color: inherit
 
 // Parallax
 .parallax-container
-  height: 300px
-  margin-bottom: -128px
-
-// Main Card
-.main-card
-  &.mdl-card
-    width: auto
-    height: 400px
-    background: url('../images/pumpkin_poster.jpg') center / cover
-    @media #{$small-and-down}
-      width: 90%
-      margin: 0 auto 35px auto
-  > .mdl-card__actions
-    background: rgba(0, 0, 0, 0.2)
-  .main-card-image__filename
-    color: #fff
-    font-size: 14px
-    font-weight: 500
+  height: 250px
+  //margin-bottom: -192px
+  .parallax
+    background-color: $primary-color
 
 // Misc
 .blog-title

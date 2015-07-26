@@ -1,28 +1,30 @@
-.blog-card
-  margin-bottom: 35px
+.blog-wrapper
+  margin-top: -128px
+  .blog-card
+    margin-bottom: 35px
 
-  &.mdl-card
-    width: auto
-    @media #{$small-and-down}
-      width: 90%
-      margin: 0 auto 35px auto
-      box-shadow: none
+    &.mdl-card
+      width: auto
 
-  > .mdl-card__title
-    color: #fff
-    height: 200px
-  >.mdl-card__supporting-text > .mdl-card__title-text
-    font-weight: 500
-    margin-bottom: 15px
+    > .mdl-card__title
+      color: #fff
+      height: 200px
 
-  > .mdl-card__menu
-    color: #fff
+    > .mdl-card__supporting-text
+      padding: 16px
+      width: 100%
+      > .mdl-card__title-text
+        font-weight: 500
+        margin-bottom: 15px
 
-  .author-avatar, .author-info
-    float: right
+    > .mdl-card__menu
+      color: #fff
 
-  .author-avatar
-    margin-left: 15px
+    .author-avatar, .author-info
+      float: right
 
-  .author-info > a
-    font-size: 13px
+    .author-avatar
+      margin-left: 15px
+
+    .author-info > a
+      font-size: 13px

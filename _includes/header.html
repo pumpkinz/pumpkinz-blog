@@ -12,7 +12,7 @@
           <div class="side-nav" id="mobile-demo">
             <div class="side-nav-header">
               <img src="/images/pumpkin_photo.png" class="circle">
-              <div class="side-nav-title">Pumpkinz</div>
+              <a href="{{ site.baseurl }}" class="side-nav-title">Pumpkinz</a>
             </div>
             <ul>
               <li><a href="/about">About</a></li>
@@ -27,5 +27,16 @@
 
 <main>
   <div class="parallax-container">
-    <div class="parallax"><img src="/images/parallax1.jpg"></div>
+    <div class="parallax">
+      <div class="row container hide-on-small-and-down">
+        <div class="col s12 m6">
+          &nbsp;
+        </div>
+        <div class="col s12 m6">
+          {% if page.title == null && post.title == null %}
+            <h2 class="banner-title">Pumpkin Reader for Hacker News</h2>
+          {% endif %}
+        </div>
+      </div>
+    </div>
   </div>
